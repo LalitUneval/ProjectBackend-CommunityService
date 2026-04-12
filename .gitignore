@@ -1,0 +1,40 @@
+# --- Java & Build Tools ---
+target/
+!.mvn/wrapper/maven-wrapper.jar
+build/
+bin/
+out/
+*.class
+
+# --- IDE - IntelliJ IDEA ---
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# --- IDE - Eclipse / STS (Spring Tool Suite) ---
+.settings/
+.classpath
+.project
+.factorypath
+.sts4-cache
+.apt_generated
+
+# --- IDE - NetBeans ---
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# --- Logs & System ---
+*.log
+.DS_Store
+.attach_pid*
+dump.rdb
+
+# --- Configuration & Secrets ---
+HELP.md
+secrets.yml
+manifest.yml
+ngrok.exe

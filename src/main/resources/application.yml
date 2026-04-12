@@ -1,0 +1,28 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: community-service
+
+  datasource:
+    url: jdbc:mysql://gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/test?sslMode=VERIFY_IDENTITY
+    username: 3utXacfbRoTt2ay.root
+    password: LbgcFSh3LDgvxXgY
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: https://projectbackend-serviceregistery-1.onrender.com/eureka/
+  instance:
+    prefer-ip-address: false
+
+internal:
+  security:
+    key: Lalit-Super-Secret-Key-2026
