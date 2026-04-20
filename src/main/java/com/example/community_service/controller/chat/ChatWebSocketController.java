@@ -99,6 +99,6 @@ public class ChatWebSocketController {
 
             log.debug("Typing signal: user {} → group {} [typing={}]",
                     senderId, payload.getGroupId(), payload.isTyping());
-        }
+        }               
     }
 }

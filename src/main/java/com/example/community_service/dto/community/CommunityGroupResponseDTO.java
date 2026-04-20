@@ -3,11 +3,14 @@ package com.example.community_service.dto.community;
 import com.example.community_service.dto.post.PostResponseDTO;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
-public class CommunityGroupResponseDTO {
+public class CommunityGroupResponseDTO implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private Long id;
     private String name;
     private String city;

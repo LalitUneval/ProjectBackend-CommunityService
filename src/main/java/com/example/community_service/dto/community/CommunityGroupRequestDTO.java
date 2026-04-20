@@ -4,9 +4,11 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 
-@Data
-public class CommunityGroupRequestDTO {
+import java.io.Serializable;
 
+@Data
+public class CommunityGroupRequestDTO implements Serializable {
+    private static final long serialVersionUID = 1L;
     @NotBlank(message = "Group name is required")
     private String name;
 

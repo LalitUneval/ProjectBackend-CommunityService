@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
@@ -14,9 +15,8 @@ import java.time.LocalDateTime;
  * We never expose entity objects directly to avoid serialization issues
  * with lazy-loaded JPA fields.
  */
-public class ChatDTOs {
-
-
+public class ChatDTOs implements Serializable {
+    private static final long serialVersionUID = 1L;
     // For request
 
 
