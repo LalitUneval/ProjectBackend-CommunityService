@@ -1,6 +1,7 @@
 package com.example.community_service.dto.chat;
 
 import com.example.community_service.entity.chat.ChatMessage;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -51,6 +52,7 @@ public class ChatDTOs implements Serializable {
     @NoArgsConstructor
     @AllArgsConstructor
     @Builder
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class PrivateMessageRequest {
         private Long receiverId;
         private String content;
@@ -73,6 +75,7 @@ public class ChatDTOs implements Serializable {
     @NoArgsConstructor
     @AllArgsConstructor
     @Builder
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class ChatMessageResponse {
         private Long id;
         private Long senderId;
